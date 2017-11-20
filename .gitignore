@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+bin/
 env/
 build/
 develop-eggs/
@@ -15,10 +16,13 @@ dist/
 downloads/
 eggs/
 .eggs/
+include/
 lib/
 lib64/
 parts/
 sdist/
+selenium/
+share/
 var/
 wheels/
 *.egg-info/
@@ -34,6 +38,7 @@ wheels/
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+geckodriver.log
 
 # Unit test / coverage reports
 htmlcov/
@@ -53,6 +58,8 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
+functional_tests.py
+pip-selfcheck.json
 
 # Flask stuff:
 instance/
@@ -72,6 +79,7 @@ target/
 
 # pyenv
 .python-version
+.env
 
 # celery beat schedule file
 celerybeat-schedule
