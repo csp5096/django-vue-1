@@ -37,19 +37,21 @@ class NewVisitorTest(unittest.TestCase):
         # She types "Buy peacock feathers" in a text box
         # Edith's hobby is typing fly-fishing lures
 
-        inputbox.send_keys('Buy peacock feathers')
+        # form_textfield = driver.find_element_by_id('Buy peacock feathers')
 
         ## Where she hits enter, the page updates and lists
         # "1: Buy peacock feathers" as an item in a to-do list
 
-        input.send_keys(Keys.ENTER)
+        #form_textfield.send_keys("")
+        # form_textfield.submti()
         time.sleep(1)
 
         table = self.browser.find_element_by_id('id_list_table')
         rows = table.find_elements_by_tag_name('tr')
 
         self.assertTrue(
-            any(row.text == '1: Buy peacock feathers' for row in rows)
+            any(row.text == '1: Buy peacock feathers' for row in rows),
+            "New to-do item did not appear in table"
         )
 
         # There is still a text box inivting her to add another itme
