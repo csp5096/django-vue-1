@@ -58,7 +58,6 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
-functional_tests.py
 pip-selfcheck.json
 
 # Flask stuff:
